@@ -1,0 +1,45 @@
+{
+  "criteria": {
+    "blue": {
+      "trigger": "minecraft:tick",
+      "conditions": {
+        "player": {
+          "team": "blue",
+          "stepping_on": {
+            "block": {
+              "blocks": [
+                "minecraft:yellow_concrete",
+                "minecraft:white_concrete"
+              ]
+            }
+          }
+        }
+      }
+    },
+    "yellow": {
+      "trigger": "minecraft:tick",
+      "conditions": {
+        "player": {
+          "team": "yellow",
+          "stepping_on": {
+            "block": {
+              "blocks": [
+                "minecraft:cyan_concrete",
+                "minecraft:white_concrete"
+              ]
+            }
+          }
+        }
+      }
+    }
+  },
+  "requirements": [
+    [
+      "blue",
+      "yellow"
+    ]
+  ],
+  "rewards": {
+    "function": "game:events/proxy/capture_point"
+  }
+}

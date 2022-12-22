@@ -1,0 +1,14 @@
+{
+  "pack": {
+    "pack_format": 10,
+    "description": "Crafty Monkeys II - by MineMakers Team"
+  },
+  "filter": {
+    "block": [
+      {
+        "namespace": "minecraft",
+        "path": "advancements/.*"
+      }
+    ]
+  }
+}
