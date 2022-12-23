@@ -1,0 +1,73 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:golden_sword",
+          "conditions": [
+            {
+              "condition": "minecraft:entity_properties",
+              "entity": "this",
+              "predicate": {
+                "team": "yellow"
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:diamond_sword",
+          "conditions": [
+            {
+              "condition": "minecraft:entity_properties",
+              "entity": "this",
+              "predicate": {
+                "team": "blue"
+              }
+            }
+          ]
+        }
+      ],
+      "functions": [
+        {
+          "function": "minecraft:set_nbt",
+          "tag": "{HideFlags:1023,CanDestroy:[\"#game:breakable\"],Unbreakable:1b}"
+        },
+        {
+          "function": "minecraft:set_enchantments",
+          "enchantments": {
+            "minecraft:efficiency": 10
+          }
+        },
+        {
+          "function": "minecraft:set_attributes",
+          "modifiers": [
+            {
+              "attribute": "minecraft:generic.attack_speed",
+              "name": "game:attack_speed",
+              "amount": 1000,
+              "operation": "addition",
+              "slot": "mainhand"
+            },
+            {
+              "attribute": "minecraft:generic.attack_damage",
+              "name": "game:attack_damage",
+              "amount": 5,
+              "operation": "addition",
+              "slot": "mainhand"
+            },
+            {
+              "attribute": "minecraft:generic.attack_knockback",
+              "name": "game:attack_knockback",
+              "amount": 5,
+              "operation": "addition",
+              "slot": "mainhand"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

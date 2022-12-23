@@ -1,0 +1,45 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:yellow_terracotta",
+          "conditions": [
+            {
+              "condition": "minecraft:entity_properties",
+              "entity": "this",
+              "predicate": {
+                "team": "yellow"
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:light_blue_terracotta",
+          "conditions": [
+            {
+              "condition": "minecraft:entity_properties",
+              "entity": "this",
+              "predicate": {
+                "team": "blue"
+              }
+            }
+          ]
+        }
+      ],
+      "functions": [
+        {
+          "function": "minecraft:set_nbt",
+          "tag": "{HideFlags:1023,CanPlaceOn:[\"#game:reachable\"],CanDestroy:[\"#game:breakable\"]}"
+        },
+        {
+          "function": "minecraft:set_count",
+          "count": 64
+        }
+      ]
+    }
+  ]
+}
