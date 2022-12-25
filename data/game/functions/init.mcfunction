@@ -3,15 +3,19 @@
 
 team add blue
 team add yellow
+team add players
 
 team modify blue color dark_aqua
 team modify yellow color yellow
+team modify players color gray
 
 team modify blue friendlyFire false
 team modify yellow friendlyFire false
+team modify players friendlyFire false
 
 team modify blue collisionRule pushOwnTeam
 team modify yellow collisionRule pushOwnTeam
+team modify players collisionRule never
 
 scoreboard objectives add var dummy
 scoreboard objectives add const dummy

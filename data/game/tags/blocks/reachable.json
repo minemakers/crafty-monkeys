@@ -1,6 +1,7 @@
 {
   "values": [
     "#game:breakable",
-    "#game:spawn"
+    "#game:spawn",
+    "minecraft:green_concrete"
   ]
 }

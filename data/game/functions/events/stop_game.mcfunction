@@ -2,9 +2,12 @@ scoreboard players reset @s confirm
 scoreboard players set $status var 0
 
 clear @a
+team join players @a
+gamemode adventure @a
 
-execute at @e[type=marker,tag=useable_blocks] run fill ~17 ~12 ~17 ~-17 ~-12 ~-17 air replace #game:useable
+scoreboard players reset * playerId
 
 function #game:resources/scenes/lobby
 
 schedule clear #game:events/check_teams
+schedule clear #game:events/check_players

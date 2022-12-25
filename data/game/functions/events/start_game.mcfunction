@@ -1,4 +1,4 @@
-scoreboard players set $status var 1
+scoreboard players set $status var 2
 
 clear @a
 tag @a remove bit0
@@ -13,6 +13,7 @@ scoreboard players reset * playerId
 function #game:resources/scenes/game
 
 execute as @a[gamemode=!spectator] run function game:managers/players/init
-execute as @a[gamemode=!spectator] run function game:managers/players/respawn
+execute as @a[gamemode=!spectator] run function game:managers/players/spawn
+execute as @a[gamemode=!spectator] run function #game:events/check_hotbar
 
 schedule function #game:events/check_teams 1t
