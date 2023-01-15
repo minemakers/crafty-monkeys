@@ -1,3 +1,4 @@
+fill 993 40 -14 1007 35 14 air
 fill 994 15 -69 1006 28 69 air
 
 place template game:push/edge 999 15 -66

@@ -19,6 +19,7 @@ data modify storage game:lang team_picker.random set value "Random Team"
 
 data modify storage game:lang join_team.blue set value "You just joined the Blue Team!"
 data modify storage game:lang join_team.yellow set value "You just joined the Yellow Team!"
+data modify storage game:lang leave_team set value {name: "Leave team", usage: "Right click"}
 
 data modify storage game:lang errors.ready set value "Sorry, there are not enough players to start the game!"
 
