@@ -1,0 +1,31 @@
+{
+  "criteria": {
+    "blue": {
+      "trigger": "minecraft:player_interacted_with_entity",
+      "conditions": {
+        "entity": {
+          "type": "minecraft:villager",
+          "nbt": "{Tags:[\"blue\"]}"
+        }
+      }
+    },
+    "yellow": {
+      "trigger": "minecraft:player_interacted_with_entity",
+      "conditions": {
+        "entity": {
+          "type": "minecraft:villager",
+          "nbt": "{Tags:[\"yellow\"]}"
+        }
+      }
+    }
+  },
+  "requirements": [
+    [
+      "blue",
+      "yellow"
+    ]
+  ],
+  "rewards": {
+    "function": "game:events/proxy/join_team"
+  }
+}
