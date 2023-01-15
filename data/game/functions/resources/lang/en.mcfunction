@@ -21,6 +21,11 @@ data modify storage game:lang join_team.blue set value "You just joined the Blue
 data modify storage game:lang join_team.yellow set value "You just joined the Yellow Team!"
 data modify storage game:lang leave_team set value {name: "Leave team", usage: "Right click"}
 
+data modify storage game:lang screen.defeat set value "Defeat"
+data modify storage game:lang screen.victory set value "Victory!"
+data modify storage game:lang win.blue set value {title: "The Blue Team", subtitle: "won the game!", message: "The Blue Team won the game"}
+data modify storage game:lang win.yellow set value {title: "The Yellow Team", subtitle: "won the game!", message: "The Yellow Team won the game"}
+
 data modify storage game:lang errors.ready set value "Sorry, there are not enough players to start the game!"
 
 data modify storage game:lang stop.prompt set value {text: "It seems someone left and you are the only team standing. Do you want to end the game?", action: "yes", "hover": "Click to end the game"}
