@@ -3,9 +3,6 @@ execute if entity @s[advancements={game:join_team={yellow=true}}] run team join 
 
 function #game:events/countdown
 
-gamemode spectator @s[team=players]
-execute if entity @s[team=players] run function game:managers/players/spawn
-
 execute if entity @s[team=blue] at @e[type=minecraft:villager,tag=blue] positioned ^ ^ ^-4 run tp @s ~ ~ ~ ~ ~7
 execute if entity @s[team=yellow] at @e[type=minecraft:villager,tag=yellow] positioned ^ ^ ^-4 run tp @s ~ ~ ~ ~ ~7
 
