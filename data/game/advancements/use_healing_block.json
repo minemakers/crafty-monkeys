@@ -11,7 +11,7 @@
           "stepping_on": {
             "block": {
               "blocks": [
-                "minecraft:purple_concrete"
+                "minecraft:red_concrete"
               ]
             }
           }
@@ -20,6 +20,6 @@
     }
   },
   "rewards": {
-    "function": "game:events/proxy/use_portal"
+    "function": "game:events/proxy/use_healing_block"
   }
 }

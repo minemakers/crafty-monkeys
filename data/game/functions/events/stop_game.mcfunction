@@ -6,6 +6,8 @@ team join players @a
 gamemode adventure @a
 
 scoreboard players reset * playerId
+scoreboard players reset $points.blue var
+scoreboard players reset $points.yellow var
 
 function #game:resources/scenes/lobby
 
