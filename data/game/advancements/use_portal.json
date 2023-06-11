@@ -1,0 +1,25 @@
+{
+  "criteria": {
+    "_": {
+      "trigger": "minecraft:tick",
+      "conditions": {
+        "player": {
+          "type_specific": {
+            "type": "player",
+            "gamemode": "adventure"
+          },
+          "stepping_on": {
+            "block": {
+              "blocks": [
+                "minecraft:purple_concrete"
+              ]
+            }
+          }
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "game:events/proxy/use_portal"
+  }
+}
